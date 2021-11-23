@@ -33,3 +33,8 @@ The sixth place winning solution (6/220) in the track of Fine-grained Object Rec
 * Oversample the categories with fewer instances.
 * Train the detectors for specific classes with low AP.
 *  Multi-scale training and testing on SwinTransformer-based detectors (even dropped by about 1% mAP).
+## Installation
+Please refer to [install.md](https://github.com/sunny-sjj/OBBDet_Swin/blob/master/docs/install.md) for installation
+
+## swin in Dota
+ change the dataset classes in [dataset_classes](https://github.com/sunny-sjj/OBBDet_Swin/blob/master/BboxToolkit/BboxToolkit/datasets/misc.py)
