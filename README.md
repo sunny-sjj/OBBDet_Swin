@@ -33,8 +33,3 @@ The sixth place winning solution (6/220) in the track of Fine-grained Object Rec
 * Oversample the categories with fewer instances.
 * Train the detectors for specific classes with low AP.
 *  Multi-scale training and testing on SwinTransformer-based detectors (even dropped by about 1% mAP).
-
-## Detections
-
-![demo image](demo/demo.png)
-
