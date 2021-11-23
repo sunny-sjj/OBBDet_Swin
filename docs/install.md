@@ -28,22 +28,11 @@ conda install pytorch torchvision -c pytorch
 Note: Make sure that your compilation CUDA version and runtime CUDA version match.
 You can check the supported CUDA version for precompiled packages on the [PyTorch website](https://pytorch.org/).
 
-`E.g.1` If you have CUDA 10.1 installed under `/usr/local/cuda` and would like to install
-PyTorch 1.5, you need to install the prebuilt PyTorch with CUDA 10.1.
+`E.g.1` install PyTorch 1.5, you need to install the prebuilt PyTorch with CUDA 10.2.(recommend). 
 
 ```python
-conda install pytorch cudatoolkit=10.1 torchvision -c pytorch
+pip install torch==1.5.0 torchvision==0.6.0
 ```
-
-`E.g. 2` If you have CUDA 9.2 installed under `/usr/local/cuda` and would like to install
-PyTorch 1.3.1., you need to install the prebuilt PyTorch with CUDA 9.2.
-
-```python
-conda install pytorch=1.3.1 cudatoolkit=9.2 torchvision=0.4.2 -c pytorch
-```
-
-If you build PyTorch from source instead of installing the prebuilt pacakge,
-you can use more CUDA versions such as 9.0.
 
 c. Clone the OBBDetection repository.
 
@@ -63,7 +52,7 @@ cd ..
 # install the OBBDetection
 pip install -r requirements/build.txt
 pip install mmpycocotools
-pip install mmcv==0.6.2
+pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu102/torch1.5.0/index.html
 pip install -v -e .  # or "python setup.py develop"
 ```
 
